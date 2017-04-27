@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title> About Me </title>
+	<meta name="description">
+
+	<style type="text/css">
+    header{background-color:black; color: white; text-align: center; padding: 10px;font-size:36px;font-family: courier}
+    body {background-color: #FFFFFF;}
+    h1 {font-family:courier; color: ##000066; font-size: 12pt;}
+    h2 {font-family:courier; color: ##000066; font-size: 15pt;}
+    h3{position: fixed; bottom:0; float: right;background-color:black;color:white;clear:both;text-align:center;padding:5px;	font-family: courier}
+
+</style>
+</head>
+<body>
+	<header> Timothy Ling </header>
+	<div id="LeftColumnBorder" style="border: solid black; background-color:#eeeeee; line-height: 30px; float:left; width:30%; height: 100%">
+		<div id="Leftcolumn1" style="text-align: left; float: left; width:50%; height: 100%" >
+			<h1>Text</h1>
+			<h1>
+			<form action="" onClick=(changeColorText(document.querySelector('input[name="color"]:checked').value))>
+  				<input type="radio" name="color" value="Black"> Black<br>
+  				<input type="radio" name="color" value="Red"> Red<br>
+  				<input type="radio" name="color" value="Orange"> Orange<br>
+  				 <input type="radio" name="color" value="Blue"> Blue<br>
+  				<input type="radio" name="color" value="Green"> Green<br>
+  				<input type="radio" name="color" value="Purple"> Purple<br>
+  				  <input type="radio" name="color" value="Brown"> Brown<br>
+  				<input type="radio" name="color" value="Yellow"> Yellow<br>
+  				<input type="radio" name="color" value="Pink"> Pink<br>
+			</form>
+			</h1>
+		</div>
+			<div id="Leftcolumn2" style="text-align: left; float: right; width:50%; height: 100%">
+				<h1>Background</h1>
+				<h1>
+				<form action="" onClick=(changeBackgroundColor(document.querySelector('input[name="colorb"]:checked').value))>
+  				<input type="radio" name="colorb" value="Black"> Black<br>
+  				<input type="radio" name="colorb" value="Red"> Red<br>
+  				<input type="radio" name="colorb" value="Orange"> Orange<br>
+  				<input type="radio" name="colorb" value="Blue"> Blue<br>
+  				<input type="radio" name="colorb" value="Green"> Green<br>
+  				<input type="radio" name="colorb" value="Purple"> Purple<br>
+  				 <input type="radio" name="colorb" value="Brown"> Brown<br>
+  				<input type="radio" name="colorb" value="Yellow"> Yellow<br>
+  				<input type="radio" name="colorb" value="Pink"> Pink<br>
+  				<input type="radio" name="colorb" value="White"> White<br>
+				</form>
+				</h1>
+			</div>
+	</div>
+
+	<div id="RightColumnBorder" style="border: solid black; float: right; width: 68%; height:100%">
+		<div id= "Text" style= "font-family:courier; font-size: 12pt; font-style: normal; font-weight: normal; color: #000000; background-color: #FFFFFF">
+			<h2>Brief Bio</h2>
+			<p> I currently attend the University of Southern California and am pursuing in a career in technology. I'm most excited about the disruptive impact of self-driving cars and the ubiquitous integration of Artificial Intelligence in our daily lives.     
+
+			<h2>Interests</h2>
+			<p>I grew up in a family of musicians and have been passionate about music since an early age. Although I listen to pretty much everything not named country (sorry), most of my music is either Hip-Hop or Soulection-type music. Currently, my favorite artists are: Freddie Gibbs, Mick Jenkins, Mr. Carmack, and Stan Getz. </p>
+
+			<p>As a child, I loved reading all sorts of comics. Some of my favorite comics are The Far Side, Garfield, early Foxtrot, and Zits. I've been flipping through some Far Side volumes whenever I get the chance and thought I should include a panel: </p>
+
+			<center><img src="far_side.jpg" style="width:300px;height:300px;"></center>
+		</div>
+
+
+	</div> 
+
+	<h3>
+		lingt@usc.edu
+	</h3>
+	<script>
+	function changeColorText(clicked_color)
+	{
+		document.getElementById("Text").style.color =  clicked_color;
+	}
+	function changeBackgroundColor(clicked_color)
+	{
+		document.getElementById("Text").style.background = clicked_color;
+	}
+	</script>
+
+</body>		
+
+
+</html>
